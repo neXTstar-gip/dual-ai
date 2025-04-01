@@ -10,5 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "belo",
+
+  "dependencies": {
+  "next": "^14.x.x",
+  "react": "^18.x.x",
+  "react-dom": "^18.x.x"
 }
