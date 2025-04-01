@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #111827;
+  color: #f9fafb;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Chat Container */
+.chat-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+.chat-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 3px;
+}
+
+/* Message Bubbles */
+.message {
+  max-width: 80%;
+  padding: 12px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.user-message {
+  background-color: #2563eb;
+  align-self: flex-end;
+}
+
+.ai-message {
+  background-color: #374151;
+  align-self: flex-start;
+}
+
+/* Copy Button */
+.copy-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 12px;
+  background-color: rgba(75, 85, 99, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s ease-in-out;
+}
+
+.copy-btn:hover {
+  background-color: rgba(75, 85, 99, 1);
+}
+
+/* Typing Animation */
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  animation: typing 1s steps(20, end) infinite, blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Input Field */
+.input-container {
+  display: flex;
+  padding: 12px;
+  background-color: #1f2937;
+  border-top: 1px solid #374151;
+}
+
+.input-field {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  color: white;
+}
+
+/* Send & Stop Button */
+.send-btn,
+.stop-btn {
+  background-color: #10a37f;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.send-btn:hover,
+.stop-btn:hover {
+  background-color: #0e8b6a;
+}
+
+/* Persona Selector */
+.persona-selector {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  color: white;
+  padding: 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+  cursor: pointer;
+}
