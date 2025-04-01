@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "main": "postcss.config.js",
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start"
-},
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "belo",
-
+  "description": "",
   "dependencies": {
-  "next": "^14.x.x",
-  "react": "^18.x.x",
-  "react-dom": "^18.x.x"
+    "next": "^14.x.x",
+    "react": "^18.x.x",
+    "react-dom": "^18.x.x"
+  }
 }
